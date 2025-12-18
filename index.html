@@ -3,52 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приглашение</title>
+    <title>Приглашение на свадьбу</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <section class="invite">
-            <!-- Картиночка -->
-            <h1 class="main-title">Дмитрий и Екатерина</h1>
-            <h2 class="invite-title">Дорогие Родные <br> и Близкие!</h2>
-            <p class="invite-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae cumque cum odio voluptates perferendis! Facere impedit temporibus dolor labore, ipsa a quisquam similique dolores nobis cum excepturi, velit inventore accusamus!</p>
-            <p class="date">23.01.2026</p>
-        </section>
-
-        <section class="main-info">
-            <!-- Картиночка -->
-            <h2 class="invite-title">Место проведения</h2>
-            <p class="title-place">"Galar Hall"</p>
-            <p class="adress-place"> <a class="link" href="https://yandex.ru/maps/-/CLwSQOOP">Славянск-на-Кубани <br> Набережная ул., 10</a></p>
-            <h2 class="invite-title">Программа Дня</h2>
-
-            <ul>
-                <li>14:00-14:30 | Сбор гостей</li>
-                <li>14:30-15:30 | Церемония</li>
-                <li>16:00-20:00 | Банкет</li>
-                <li>21:00-22:00 | Торт и Салют</li>
-            </ul>
-        </section>
-
-        <section class="dress-code">
-            <!-- Картиночка -->
-            <p>
-                Нам будет особенно приятно <br>
-                видеть вас в нарядах цветовой <br>
-                гаммы нашей свадьбы
-            </p>
-            <div class="color-list">
-                <div class="color-item"></div>
-                <div class="color-item"></div>
-                <div class="color-item"></div>
-                <div class="color-item"></div>
-                <div class="color-item"></div>
+<body>
+    <div class="container">
+        <!-- 1. Первое фото с именами -->
+        <section class="hero-section" style="background-image: url('src/img/1.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-top-text">Two hearts, one rhythm</p>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-names">ЕГОР & МАРИЯ</h1>
             </div>
         </section>
 
-        <section class="footer">
-            <!-- Картиночка -->
+        <div class="torn-edge torn-top"></div>
+
+        <!-- 2. Приглашение -->
+        <section class="invite-section">
+            <h2 class="invite-title">ДОРОГИЕ РОДНЫЕ<br>И БЛИЗКИЕ!</h2>
+            <p class="invite-text">
+                Приглашаем вас<br>
+                на волнительное и значимое<br>
+                событие — создание нашей<br>
+                семьи. Будем с нетерпением<br>
+                ждать ваших бесценных<br>
+                пожеланий и мудрых напутствий.<br>
+                Искренне хотим разделить<br>
+                с вами этот чудесный<br>
+                праздник,который состоится:
+            </p>
+            <p class="date-text">23.01.2026</p>
         </section>
-    </body>
+
+        <!-- <div class="torn-edge torn-bottom"></div> -->
+
+        <!-- 3. Фото пары -->
+        <div class="photo-section" style="background-image: url('src/img/1.jpg');"></div>
+
+        <div class="torn-edge torn-top"></div>
+
+        <!-- 4. Место проведения и программа -->
+        <section class="info-section">
+            <h2 class="section-title">МЕСТО ПРОВЕДЕНИЯ</h2>
+            <p class="place-name">"Terrace by Soho Rooms"</p>
+            <p class="place-address">
+                г.Минск, Первомайский район,<br>
+                улица Кирова 22
+            </p>
+
+            <h2 class="section-title">ПРОГРАММА ДНЯ</h2>
+            <ul class="program-list">
+                <li>14:00-14:30 &nbsp;|&nbsp; Сбор гостей</li>
+                <li>14:30-15:00 &nbsp;|&nbsp; Церемония</li>
+                <li>16:00-20:00 &nbsp;|&nbsp; Банкет</li>
+                <li>21:00-22:00 &nbsp;|&nbsp; Торт и салют</li>
+            </ul>
+        </section>
+
+        <!-- <div class="torn-edge torn-bottom"></div> -->
+
+        <!-- 5. Фото банкета -->
+        <div class="banquet-photo" style="background-image: url('src/img/1.jpg');"></div>
+
+        <div class="torn-edge torn-top"></div>
+
+        <!-- 6. Дресс-код -->
+        <section class="dresscode-section">
+            <h2 class="section-title">ДРЕСС-КОД</h2>
+            <p class="dresscode-text">
+                Нам будет особенно приятно<br>
+                видеть вас в нарядах цветовой<br>
+                гаммы нашей свадьбы
+            </p>
+            <div class="color-palette">
+                <div class="color-circle"></div>
+                <div class="color-circle"></div>
+                <div class="color-circle"></div>
+                <div class="color-circle"></div>
+                <div class="color-circle"></div>
+            </div>
+        </section>
+
+        <!-- <div class="torn-edge torn-bottom"></div> -->
+
+        <!-- 7. Финальное фото -->
+        <section class="footer-section" style="background-image: url('src/img/1.jpg');">
+            <div class="footer-overlay"></div>
+            <div class="footer-content">
+                <p class="footer-date">23.01<br>2026</p>
+                <p class="footer-text">МЫ БУДЕМ СЧАСТЛИВЫ<br>ВИДЕТЬ ВАС!</p>
+            </div>
+        </section>
+
+    </div>
+</body>
 </html>

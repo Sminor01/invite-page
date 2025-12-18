@@ -1,0 +1,300 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Cormorant Garamond', 'Georgia', serif;
+    color: #2d2d2d;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: #f8f8f8;
+}
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+/* Секция 1: Первое фото с именами */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.6) 100%);
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+.hero-top-text {
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #5a5a5a;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.hero-names {
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-top: auto;
+    padding: 40px 20px;
+}
+.torn-edge {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: white;
+    z-index: 2;
+}
+.torn-top {
+    background-image: url("data:image/svg+xml,%3Csvg width='400' height='30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,30 Q8,12 16,18 Q24,24 32,15 Q40,8 48,17 Q56,23 64,14 Q72,7 80,16 Q88,22 96,13 Q104,6 112,16 Q120,24 128,14 Q136,6 144,17 Q152,25 160,15 Q168,7 176,18 Q184,24 192,13 Q200,5 208,16 Q216,23 224,13 Q232,5 240,17 Q248,25 256,14 Q264,6 272,17 Q280,24 288,14 Q296,6 304,18 Q312,25 320,15 Q328,7 336,17 Q344,24 352,14 Q360,6 368,17 Q376,24 384,15 Q392,7 400,16 L400,30 L0,30 Z' fill='white'/%3E%3C/svg%3E");
+    background-size: 100% 30px;
+    background-repeat: repeat-x;
+    margin-top: -1px;
+}
+.torn-bottom {
+    background-image: url("data:image/svg+xml,%3Csvg width='400' height='30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,0 Q8,18 16,12 Q24,6 32,15 Q40,22 48,13 Q56,5 64,14 Q72,21 80,12 Q88,5 96,15 Q104,23 112,13 Q120,5 128,14 Q136,22 144,12 Q152,4 160,15 Q168,23 176,11 Q184,3 192,15 Q200,23 208,12 Q216,4 224,15 Q232,22 240,11 Q248,3 256,14 Q264,22 272,11 Q280,3 288,14 Q296,22 304,11 Q312,3 320,14 Q328,22 336,12 Q344,4 352,15 Q360,23 368,11 Q376,3 384,14 Q392,22 400,13 L400,0 L0,0 Z' fill='white'/%3E%3C/svg%3E");
+    background-size: 100% 30px;
+    background-repeat: repeat-x;
+    margin-bottom: -1px;
+}
+/* Секция 2: Белая с текстом приглашения */
+.invite-section {
+    background: white;
+    padding: 50px 35px;
+    text-align: center;
+}
+.invite-title {
+    font-size: 1.35rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+.invite-text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #5a5a5a;
+    margin-bottom: 35px;
+}
+.date-text {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: #6d5a44;
+    margin-top: 30px;
+    font-weight: 300;
+}
+/* Секция 3: Фото пары */
+.photo-section {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* Секция 4: Место и программа */
+.info-section {
+    background: white;
+    padding: 50px 35px;
+    text-align: center;
+}
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+}
+.place-name {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #3d3d3d;
+    margin: 15px 0;
+}
+.place-address {
+    font-size: 0.9rem;
+    color: #5a5a5a;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+.program-list {
+    list-style: none;
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+.program-list li {
+    font-size: 0.95rem;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(139, 115, 85, 0.12);
+    color: #5a5a5a;
+    letter-spacing: 0.5px;
+}
+.program-list li:last-child {
+    border-bottom: none;
+}
+/* Секция 5: Фото банкета */
+.banquet-photo {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+/* Секция 6: Дресс-код */
+.dresscode-section {
+    background: white;
+    padding: 50px 35px;
+    text-align: center;
+}
+.dresscode-text {
+    font-size: 0.95rem;
+    line-height: 1.9;
+    color: #5a5a5a;
+    margin: 25px 0 35px;
+}
+.color-palette {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 35px 0;
+}
+.color-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+.color-circle:nth-child(1) { background-color: #a8c5d6; }
+.color-circle:nth-child(2) { background-color: #b8b49d; }
+.color-circle:nth-child(3) { background-color: #d4c5b0; }
+.color-circle:nth-child(4) { background-color: #c9b899; }
+.color-circle:nth-child(5) { background-color: #6d5a44; }
+/* Секция 7: Финальное фото */
+.footer-section {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.35) 100%);
+    z-index: 1;
+}
+.footer-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px;
+}
+.footer-date {
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 8px;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+.footer-text {
+    font-size: 1.05rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+/* Адаптивность для больших экранов */
+@media (min-width: 481px) {
+    .container {
+        max-width: 600px;
+    }
+    .hero-names {
+        font-size: 2.8rem;
+    }
+    .invite-title {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 1.45rem;
+    }
+    .photo-section {
+        height: 450px;
+    }
+    .banquet-photo {
+        height: 400px;
+    }
+    .color-circle {
+        width: 48px;
+        height: 48px;
+    }
+    .footer-date {
+        font-size: 4rem;
+    }
+}
+/* Адаптивность для маленьких экранов */
+@media (max-width: 380px) {
+    .hero-names {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+    .invite-section,
+    .info-section,
+    .dresscode-section {
+        padding: 40px 25px;
+    }
+    .invite-title {
+        font-size: 1.15rem;
+    }
+    .section-title {
+        font-size: 1.15rem;
+    }
+    .photo-section {
+        height: 350px;
+    }
+    .banquet-photo {
+        height: 300px;
+    }
+    .color-circle {
+        width: 38px;
+        height: 38px;
+    }
+    .footer-date {
+        font-size: 2.8rem;
+        letter-spacing: 5px;
+    }
+    .footer-text {
+        font-size: 0.95rem;
+    }
+}
